@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог курсов - Корочки.есть</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Корочки.есть</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link active">Каталог курсов</a>
+                    <a href="blog.html" class="nav-link">База знаний</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="free-materials.html" class="btn btn-outline">Бесплатные материалы</a>
+                    <a href="catalog.html" class="btn btn-primary">Войти</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Каталог курсов</h1>
+            <p class="page-subtitle">Выберите курс, который поможет вам достичь ваших целей</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Фильтры</h3>
+                        <button class="clear-filters" id="clearFilters">Сбросить</button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-title">Категория</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="programming">
+                            <span>Программирование</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="design">
+                            <span>Дизайн</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="marketing">
+                            <span>Маркетинг</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="business">
+                            <span>Бизнес</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="personal">
+                            <span>Личностный рост</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title">Уровень</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="level" value="beginner">
+                            <span>Начинающий</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="level" value="intermediate">
+                            <span>Средний</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="level" value="advanced">
+                            <span>Продвинутый</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title">Формат</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="format" value="video">
+                            <span>Видео</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="format" value="text">
+                            <span>Текст</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="format" value="feedback">
+                            <span>С проверкой</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title">Цена</h4>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="0" max="50000" value="50000" step="1000">
+                            <div class="price-values">
+                                <span>0 ₽</span>
+                                <span id="maxPrice">50,000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Courses Grid -->
+                <main class="catalog-main">
+                    <div class="catalog-toolbar">
+                        <div class="results-count">
+                            Найдено: <span id="resultsCount">24</span> курсов
+                        </div>
+                        <div class="sort-options">
+                            <label>Сортировка:</label>
+                            <select id="sortSelect">
+                                <option value="popular">По популярности</option>
+                                <option value="price-low">По цене: сначала дешевые</option>
+                                <option value="price-high">По цене: сначала дорогие</option>
+                                <option value="newest">Сначала новые</option>
+                                <option value="rating">По рейтингу</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="courses-grid" id="coursesGrid">
+                        <!-- Course cards will be generated here -->
+                    </div>
+
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>← Назад</button>
+                        <div class="pagination-pages">
+                            <button class="pagination-page active">1</button>
+                            <button class="pagination-page">2</button>
+                            <button class="pagination-page">3</button>
+                        </div>
+                        <button class="pagination-btn">Вперед →</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Корочки.есть</div>
+                    <p class="footer-description">Образовательная платформа для тех, кто хочет изменить свою карьеру и жизнь.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Обучайтесь</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог курсов</a></li>
+                        <li><a href="blog.html">База знаний</a></li>
+                        <li><a href="free-materials.html">Бесплатные материалы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">О платформе</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Преподавателям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Корочки.есть. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
+

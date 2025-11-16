@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знаний - Корочки.есть</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Корочки.есть</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог курсов</a>
+                    <a href="blog.html" class="nav-link active">База знаний</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="free-materials.html" class="btn btn-outline">Бесплатные материалы</a>
+                    <a href="catalog.html" class="btn btn-primary">Войти</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">База знаний</h1>
+            <p class="page-subtitle">Полезные статьи, гайды и материалы для вашего развития</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-layout">
+                <main class="blog-main">
+                    <div class="blog-filters">
+                        <button class="filter-btn active">Все статьи</button>
+                        <button class="filter-btn">Программирование</button>
+                        <button class="filter-btn">Дизайн</button>
+                        <button class="filter-btn">Маркетинг</button>
+                        <button class="filter-btn">Карьера</button>
+                    </div>
+
+                    <div class="articles-grid">
+                        <article class="article-card featured">
+                            <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Программирование</div>
+                                <h2 class="article-title"><a href="#">Как начать карьеру веб-разработчика: полное руководство для новичков</a></h2>
+                                <p class="article-excerpt">Пошаговый план действий для тех, кто хочет стать веб-разработчиком с нуля. Какие технологии изучать, где искать работу и как подготовиться к собеседованию.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">15 января 2024</span>
+                                    <span class="article-read-time">8 мин чтения</span>
+                                </div>
+                                <a href="catalog.html" class="article-cta">Посмотреть курсы по программированию →</a>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Дизайн</div>
+                                <h2 class="article-title"><a href="#">10 принципов UI/UX дизайна, которые должен знать каждый</a></h2>
+                                <p class="article-excerpt">Основные правила создания удобных и красивых интерфейсов. Практические советы от опытных дизайнеров.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">12 января 2024</span>
+                                    <span class="article-read-time">5 мин чтения</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Маркетинг</div>
+                                <h2 class="article-title"><a href="#">SMM в 2024: новые тренды и инструменты</a></h2>
+                                <p class="article-excerpt">Что изменилось в социальных сетях и как адаптировать свою стратегию продвижения под новые алгоритмы.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">10 января 2024</span>
+                                    <span class="article-read-time">6 мин чтения</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="article-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Карьера</div>
+                                <h2 class="article-title"><a href="#">Как сменить профессию в 30+: личный опыт</a></h2>
+                                <p class="article-excerpt">История успеха: как перейти из одной сферы в IT и не потерять мотивацию. Практические советы и лайфхаки.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">8 января 2024</span>
+                                    <span class="article-read-time">7 мин чтения</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="article-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Программирование</div>
+                                <h2 class="article-title"><a href="#">React vs Vue: что выбрать в 2024 году</a></h2>
+                                <p class="article-excerpt">Сравнение двух популярных фреймворков: плюсы, минусы и когда что использовать.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">5 января 2024</span>
+                                    <span class="article-read-time">4 мин чтения</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <div class="article-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                            <div class="article-content">
+                                <div class="article-category">Дизайн</div>
+                                <h2 class="article-title"><a href="#">Figma для начинающих: первые шаги</a></h2>
+                                <p class="article-excerpt">Базовый гайд по работе в Figma: инструменты, горячие клавиши и полезные плагины.</p>
+                                <div class="article-meta">
+                                    <span class="article-date">3 января 2024</span>
+                                    <span class="article-read-time">5 мин чтения</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </main>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Бесплатные вебинары</h3>
+                        <div class="webinar-item">
+                            <div class="webinar-date">20 января, 19:00</div>
+                            <h4>Как найти первую работу в IT</h4>
+                            <a href="#" class="webinar-link">Записаться →</a>
+                        </div>
+                        <div class="webinar-item">
+                            <div class="webinar-date">25 января, 19:00</div>
+                            <h4>Создание портфолио дизайнера</h4>
+                            <a href="#" class="webinar-link">Записаться →</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Популярные материалы</h3>
+                        <div class="popular-item">
+                            <a href="#">Чек-лист: подготовка к собеседованию</a>
+                        </div>
+                        <div class="popular-item">
+                            <a href="#">Шаблоны резюме для IT-специалистов</a>
+                        </div>
+                        <div class="popular-item">
+                            <a href="#">Гайд по Git для начинающих</a>
+                        </div>
+                        <div class="popular-item">
+                            <a href="#">10 инструментов для дизайнеров</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Подписка на новости</h3>
+                        <p>Получайте новые статьи и материалы на почту</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary btn-block">Подписаться</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Корочки.есть</div>
+                    <p class="footer-description">Образовательная платформа для тех, кто хочет изменить свою карьеру и жизнь.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Обучайтесь</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог курсов</a></li>
+                        <li><a href="blog.html">База знаний</a></li>
+                        <li><a href="free-materials.html">Бесплатные материалы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">О платформе</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Преподавателям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Корочки.есть. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

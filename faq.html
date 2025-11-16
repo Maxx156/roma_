@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Корочки.есть</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Корочки.есть</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог курсов</a>
+                    <a href="blog.html" class="nav-link">База знаний</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="free-materials.html" class="btn btn-outline">Бесплатные материалы</a>
+                    <a href="catalog.html" class="btn btn-primary">Войти</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Часто задаваемые вопросы</h1>
+            <p class="page-subtitle">Ответы на самые популярные вопросы о платформе и обучении</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">Все вопросы</button>
+                <button class="faq-category-btn" data-category="payment">Оплата</button>
+                <button class="faq-category-btn" data-category="access">Доступ к курсам</button>
+                <button class="faq-category-btn" data-category="technical">Технические</button>
+                <button class="faq-category-btn" data-category="refund">Возврат</button>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Какие способы оплаты доступны?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем оплату банковскими картами (Visa, MasterCard, МИР), через электронные кошельки (ЮMoney, Qiwi), банковским переводом, а также в рассрочку от наших партнеров. Все платежи защищены и обрабатываются через безопасные платежные системы.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="access">
+                    <div class="faq-question">
+                        <h3>Как долго у меня будет доступ к курсу?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>После покупки курса у вас будет бессрочный доступ ко всем материалам. Вы можете изучать курс в своем темпе, возвращаться к урокам в любое время и проходить курс столько раз, сколько нужно.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Какие технические требования для прохождения курсов?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для просмотра видеоуроков вам понадобится компьютер, планшет или смартфон с доступом в интернет. Рекомендуемая скорость интернета — от 5 Мбит/с для комфортного просмотра в HD-качестве. Для практических заданий по программированию потребуется установить необходимое программное обеспечение (инструкции предоставляются в курсе).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="refund">
+                    <div class="faq-question">
+                        <h3>Можно ли вернуть деньги за курс?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем гарантию возврата денег в течение 30 дней с момента покупки курса. Если курс вам не подошел или не оправдал ожиданий, просто напишите в службу поддержки, и мы вернем полную стоимость без лишних вопросов.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="access">
+                    <div class="faq-question">
+                        <h3>Можно ли проходить курс на мобильном устройстве?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, наша платформа полностью адаптирована для мобильных устройств. Вы можете смотреть видеоуроки и читать материалы с телефона или планшета. Однако для выполнения практических заданий по программированию рекомендуется использовать компьютер.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Есть ли рассрочка на оплату курсов?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем рассрочку на многие курсы через наших партнеров. Рассрочка доступна на срок от 3 до 12 месяцев без переплаты. Подробности можно уточнить при оформлении заказа или у службы поддержки.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="access">
+                    <div class="faq-question">
+                        <h3>Что делать, если я не успеваю пройти курс в срок?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Не переживайте! У вас бессрочный доступ к курсу, поэтому вы можете изучать материалы в своем темпе. Нет никаких дедлайнов или ограничений по времени. Учитесь тогда, когда вам удобно.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Нужно ли устанавливать специальное ПО для курсов?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Это зависит от курса. Для курсов по программированию потребуется установить редактор кода и необходимые инструменты разработки. Для курсов по дизайну — графические редакторы (Figma, Adobe и т.д.). В каждом курсе есть подробные инструкции по установке всего необходимого ПО, и мы всегда готовы помочь, если возникнут трудности.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="access">
+                    <div class="faq-question">
+                        <h3>Выдается ли сертификат после прохождения курса?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, после успешного прохождения курса и выполнения всех практических заданий вы получите сертификат о прохождении. Сертификат можно скачать в электронном виде и добавить в резюме или портфолио.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="access">
+                    <div class="faq-question">
+                        <h3>Можно ли задавать вопросы преподавателю?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, в большинстве курсов есть возможность задавать вопросы преподавателю в комментариях к урокам или в закрытом чате курса. Преподаватели обычно отвечают в течение 24-48 часов. Также у нас есть общее сообщество студентов, где можно обсудить любые вопросы с другими учащимися.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Есть ли скидки для студентов?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем скидку 20% для студентов очных и заочных учебных заведений. Для получения скидки необходимо отправить фото студенческого билета в службу поддержки. Также регулярно проводятся акции и распродажи, на которые можно подписаться в наших социальных сетях.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Что делать, если видео не загружается или тормозит?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Если возникают проблемы с воспроизведением видео, попробуйте: снизить качество видео в настройках плеера, проверить скорость интернета, очистить кэш браузера или попробовать другой браузер. Если проблема сохраняется, обратитесь в службу поддержки — мы обязательно поможем решить проблему.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <h2>Не нашли ответ на свой вопрос?</h2>
+                <p>Свяжитесь с нашей службой поддержки, и мы обязательно поможем</p>
+                <a href="contacts.html" class="btn btn-primary btn-large">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Корочки.есть</div>
+                    <p class="footer-description">Образовательная платформа для тех, кто хочет изменить свою карьеру и жизнь.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Обучайтесь</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог курсов</a></li>
+                        <li><a href="blog.html">База знаний</a></li>
+                        <li><a href="free-materials.html">Бесплатные материалы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">О платформе</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Преподавателям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Корочки.есть. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
+

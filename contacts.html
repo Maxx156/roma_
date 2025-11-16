@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Корочки.есть</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Корочки.есть</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог курсов</a>
+                    <a href="blog.html" class="nav-link">База знаний</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link active">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="free-materials.html" class="btn btn-outline">Бесплатные материалы</a>
+                    <a href="catalog.html" class="btn btn-primary">Войти</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            <p class="page-subtitle">Свяжитесь с нами любым удобным способом</p>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts-section">
+        <div class="container">
+            <div class="contacts-layout">
+                <div class="contacts-info">
+                    <h2>Свяжитесь с нами</h2>
+                    <p>Мы всегда рады помочь вам с любыми вопросами. Выберите удобный способ связи или заполните форму обратной связи.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>support@koroчки.есть</p>
+                                <p>info@koroчки.есть</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-content">
+                                <h3>Телефон</h3>
+                                <p>+7 (800) 123-45-67</p>
+                                <p>Работаем: Пн-Пт, 9:00 - 20:00 МСК</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-content">
+                                <h3>Социальные сети</h3>
+                                <div class="social-contacts">
+                                    <a href="#" class="social-contact-link">VK</a>
+                                    <a href="#" class="social-contact-link">Telegram</a>
+                                    <a href="#" class="social-contact-link">YouTube</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Образовательная, д. 1</p>
+                                <p>Офис: Пн-Пт, 10:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Форма обратной связи</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема обращения *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Выберите тему</option>
+                                <option value="course">Вопрос о курсе</option>
+                                <option value="payment">Оплата и возврат</option>
+                                <option value="technical">Техническая поддержка</option>
+                                <option value="partnership">Партнерство</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="agreement" required>
+                                <span>Я согласен с <a href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (optional) -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-placeholder">
+                <p>📍 Карта офиса</p>
+                <p>г. Москва, ул. Образовательная, д. 1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Корочки.есть</div>
+                    <p class="footer-description">Образовательная платформа для тех, кто хочет изменить свою карьеру и жизнь.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Обучайтесь</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог курсов</a></li>
+                        <li><a href="blog.html">База знаний</a></li>
+                        <li><a href="free-materials.html">Бесплатные материалы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">О платформе</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Преподавателям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Корочки.есть. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

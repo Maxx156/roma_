@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-разработка с нуля - Корочки.есть</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Корочки.есть</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог курсов</a>
+                    <a href="blog.html" class="nav-link">База знаний</a>
+                    <a href="about.html" class="nav-link">О нас</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="free-materials.html" class="btn btn-outline">Бесплатные материалы</a>
+                    <a href="catalog.html" class="btn btn-primary">Войти</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Hero -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-hero-main">
+                    <div class="course-breadcrumb">
+                        <a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / <span>Веб-разработка с нуля</span>
+                    </div>
+                    <div class="course-badge">Акция</div>
+                    <h1 class="course-title">Веб-разработка с нуля</h1>
+                    <p class="course-subtitle">Полный курс по созданию современных веб-приложений. Освойте HTML, CSS, JavaScript и React, создайте портфолио и начните карьеру разработчика.</p>
+                    
+                    <div class="course-meta-row">
+                        <div class="course-meta-item">
+                            <span class="meta-icon">⭐</span>
+                            <span class="meta-text">4.9 (1,234 отзывов)</span>
+                        </div>
+                        <div class="course-meta-item">
+                            <span class="meta-icon">👥</span>
+                            <span class="meta-text">8,500+ студентов</span>
+                        </div>
+                        <div class="course-meta-item">
+                            <span class="meta-icon">⏱</span>
+                            <span class="meta-text">120 часов</span>
+                        </div>
+                        <div class="course-meta-item">
+                            <span class="meta-icon">📚</span>
+                            <span class="meta-text">15 модулей</span>
+                        </div>
+                    </div>
+
+                    <div class="course-promo-video">
+                        <div class="video-placeholder">
+                            <button class="play-button">▶</button>
+                            <p>Промо-видео от автора курса</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-sidebar">
+                    <div class="course-purchase-card">
+                        <div class="course-price-block">
+                            <div class="price-old">15,990 ₽</div>
+                            <div class="price-current">9,990 ₽</div>
+                            <div class="price-discount">-37%</div>
+                        </div>
+                        <div class="discount-timer">
+                            <span>⏰ До конца акции осталось:</span>
+                            <div class="timer" id="discountTimer">
+                                <span>02</span>:<span>15</span>:<span>30</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-large btn-block">Купить курс</a>
+                        <button class="btn btn-secondary btn-large btn-block">Добавить в избранное</button>
+                        <div class="purchase-guarantee">
+                            <span>✓ Гарантия возврата денег 30 дней</span>
+                            <span>✓ Доступ навсегда</span>
+                            <span>✓ Сертификат о прохождении</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content-section">
+        <div class="container">
+            <div class="course-content-layout">
+                <main class="course-main-content">
+                    <!-- Problem & Solution -->
+                    <div class="content-block">
+                        <h2>Проблема, которую решает курс</h2>
+                        <p>Многие хотят стать веб-разработчиками, но не знают, с чего начать. Огромное количество информации в интернете, устаревшие материалы, отсутствие структуры — все это мешает эффективному обучению.</p>
+                        <p>После прохождения курса вы получите:</p>
+                        <ul>
+                            <li>Полное понимание основ веб-разработки</li>
+                            <li>Практические навыки работы с современными технологиями</li>
+                            <li>Готовое портфолио из 5+ проектов</li>
+                            <li>Опыт работы в команде и с Git</li>
+                            <li>Подготовку к собеседованиям и помощь в поиске работы</li>
+                        </ul>
+                    </div>
+
+                    <!-- Course Program -->
+                    <div class="content-block">
+                        <h2>Программа курса</h2>
+                        <div class="course-program">
+                            <div class="program-module">
+                                <div class="module-header">
+                                    <span class="module-number">Модуль 1</span>
+                                    <h3>Основы HTML и CSS</h3>
+                                    <span class="module-lessons">8 уроков</span>
+                                </div>
+                                <div class="module-content">
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Введение в веб-разработку</span>
+                                        <span class="lesson-duration">15 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Структура HTML документа</span>
+                                        <span class="lesson-duration">25 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Семантические теги</span>
+                                        <span class="lesson-duration">20 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Основы CSS: селекторы и свойства</span>
+                                        <span class="lesson-duration">30 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Flexbox и Grid</span>
+                                        <span class="lesson-duration">45 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Адаптивная верстка</span>
+                                        <span class="lesson-duration">40 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Практика: верстка лендинга</span>
+                                        <span class="lesson-duration">60 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Итоговый проект модуля</span>
+                                        <span class="lesson-duration">120 мин</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="program-module">
+                                <div class="module-header">
+                                    <span class="module-number">Модуль 2</span>
+                                    <h3>JavaScript основы</h3>
+                                    <span class="module-lessons">12 уроков</span>
+                                </div>
+                                <div class="module-content">
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Введение в JavaScript</span>
+                                        <span class="lesson-duration">20 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Переменные и типы данных</span>
+                                        <span class="lesson-duration">25 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Функции и области видимости</span>
+                                        <span class="lesson-duration">30 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Работа с DOM</span>
+                                        <span class="lesson-duration">45 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">События и обработчики</span>
+                                        <span class="lesson-duration">40 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Асинхронность: Promise и async/await</span>
+                                        <span class="lesson-duration">50 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Работа с API</span>
+                                        <span class="lesson-duration">60 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Практика: интерактивное приложение</span>
+                                        <span class="lesson-duration">90 мин</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="program-module">
+                                <div class="module-header">
+                                    <span class="module-number">Модуль 3</span>
+                                    <h3>React и современный стек</h3>
+                                    <span class="module-lessons">10 уроков</span>
+                                </div>
+                                <div class="module-content">
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Введение в React</span>
+                                        <span class="lesson-duration">30 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Компоненты и JSX</span>
+                                        <span class="lesson-duration">35 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Состояние и хуки</span>
+                                        <span class="lesson-duration">40 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Роутинг с React Router</span>
+                                        <span class="lesson-duration">45 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Работа с формами</span>
+                                        <span class="lesson-duration">50 мин</span>
+                                    </div>
+                                    <div class="lesson-item">
+                                        <span class="lesson-icon">▶</span>
+                                        <span class="lesson-title">Финальный проект: Todo App</span>
+                                        <span class="lesson-duration">180 мин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- For Whom -->
+                    <div class="content-block">
+                        <h2>Для кого этот курс</h2>
+                        <div class="for-whom-grid">
+                            <div class="for-whom-item">
+                                <div class="for-whom-icon">👨‍💻</div>
+                                <h4>Новички в программировании</h4>
+                                <p>Те, кто хочет начать карьеру веб-разработчика с нуля</p>
+                            </div>
+                            <div class="for-whom-item">
+                                <div class="for-whom-icon">🔄</div>
+                                <h4>Смена профессии</h4>
+                                <p>Люди, которые хотят перейти в IT из другой сферы</p>
+                            </div>
+                            <div class="for-whom-item">
+                                <div class="for-whom-icon">📈</div>
+                                <h4>Повышение квалификации</h4>
+                                <p>Разработчики, которые хотят изучить современный стек</p>
+                            </div>
+                            <div class="for-whom-item">
+                                <div class="for-whom-icon">💼</div>
+                                <h4>Фрилансеры</h4>
+                                <p>Те, кто хочет начать зарабатывать на веб-разработке</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="content-block">
+                        <h2>После курса вы сможете:</h2>
+                        <div class="results-list">
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Создавать адаптивные веб-сайты с нуля</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Писать чистый и поддерживаемый код на JavaScript</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Работать с React и создавать современные SPA</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Использовать Git для контроля версий</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Работать с API и асинхронным кодом</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Деплоить проекты в интернет</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Проходить технические собеседования</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-check">✓</span>
+                                <span>Работать в команде разработчиков</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructor -->
+                    <div class="content-block">
+                        <h2>Преподаватель</h2>
+                        <div class="instructor-card">
+                            <div class="instructor-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="instructor-info">
+                                <h3>Иван Сидоров</h3>
+                                <p class="instructor-role">Senior Frontend Developer в Яндекс</p>
+                                <p class="instructor-bio">Опыт разработки более 8 лет. Работал над проектами для крупных компаний: Яндекс, Сбер, Mail.ru. Создал более 50 веб-приложений, обучил более 2000 студентов. Эксперт в области React, TypeScript и современной веб-разработки.</p>
+                                <div class="instructor-stats">
+                                    <div class="instructor-stat">
+                                        <span class="stat-value">8+</span>
+                                        <span class="stat-label">лет опыта</span>
+                                    </div>
+                                    <div class="instructor-stat">
+                                        <span class="stat-value">2000+</span>
+                                        <span class="stat-label">студентов</span>
+                                    </div>
+                                    <div class="instructor-stat">
+                                        <span class="stat-value">4.9</span>
+                                        <span class="stat-label">рейтинг</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonials -->
+                    <div class="content-block">
+                        <h2>Отзывы студентов</h2>
+                        <div class="course-testimonials">
+                            <div class="course-testimonial">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-author-info">
+                                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                        <div>
+                                            <div class="testimonial-name">Алексей Петров</div>
+                                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-date">2 недели назад</div>
+                                </div>
+                                <p class="testimonial-text">Отличный курс! Все объясняется очень доступно, много практики. После завершения нашел работу frontend-разработчика. Преподаватель всегда отвечает на вопросы, очень поддерживает студентов.</p>
+                            </div>
+                            <div class="course-testimonial">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-author-info">
+                                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                        <div>
+                                            <div class="testimonial-name">Мария Соколова</div>
+                                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-date">1 месяц назад</div>
+                                </div>
+                                <p class="testimonial-text">Курс превзошел все ожидания! Структура идеальная, от простого к сложному. Особенно понравились практические задания и финальные проекты. Теперь могу создавать полноценные веб-приложения.</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="course-cta">
+        <div class="container">
+            <div class="course-cta-content">
+                <h2>Готовы начать обучение?</h2>
+                <p>Присоединяйтесь к 8,500+ студентам, которые уже проходят этот курс</p>
+                <a href="#" class="btn btn-primary btn-large">Купить курс за 9,990 ₽</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Корочки.есть</div>
+                    <p class="footer-description">Образовательная платформа для тех, кто хочет изменить свою карьеру и жизнь.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Обучайтесь</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог курсов</a></li>
+                        <li><a href="blog.html">База знаний</a></li>
+                        <li><a href="free-materials.html">Бесплатные материалы</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">О платформе</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Преподавателям</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Корочки.есть. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/course.js"></script>
+</body>
+</html>
+
